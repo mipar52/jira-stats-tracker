@@ -43,12 +43,12 @@ With `JiraIssue` JSON, information like the issue name, assignee, priority, when
 ## Requests
 
 All of the requests are done via Networking.
-For the base URL, you can place the following URL: `https://your-company.atlassian.net/rest/api/2/`
+For the base URL, you can place the following URL:\ `https://your-company.atlassian.net/rest/api/2/`
 
 Example:\
-`var networking = Networking(baseURL: https://your-company.atlassian.net/rest/api/2/)`
+`let networking = Networking(baseURL: https://your-company.atlassian.net/rest/api/2/)`
 
-After the base URL has been placed, with every request, you need to set the authorisation header, which contains your e-mail (that is registered on Atlassian) and Atlassian PAT:
+After the base URL has been placed, with every request, you need to set the authorisation header, which contains your e-mail (that is registered on Atlassian) and Atlassian PAT:\
 `networking.setAuthorizationHeader(username: "your-email", password: "your-PAT")`
 
 After setting the header, you can now use the `get` method with the information you want to search:
