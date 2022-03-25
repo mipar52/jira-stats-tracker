@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B213FEFDD2116125C26956B /* Pods_jira_statistics_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7007425173D4477BBB9E8B3 /* Pods_jira_statistics_tracker.framework */; };
+		A1DD1B7027EB4EB100E594C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B6F27EB4EB100E594C6 /* AppDelegate.swift */; };
+		A1DD1B7227EB4EB100E594C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B7127EB4EB100E594C6 /* SceneDelegate.swift */; };
+		A1DD1B7727EB4EB100E594C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1B7527EB4EB100E594C6 /* Main.storyboard */; };
+		A1DD1B7927EB4EB300E594C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1B7827EB4EB300E594C6 /* Assets.xcassets */; };
+		A1DD1B7C27EB4EB300E594C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1DD1B7A27EB4EB300E594C6 /* LaunchScreen.storyboard */; };
+		A1DD1B8827EB541400E594C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B8727EB541400E594C6 /* Constants.swift */; };
+		A1DD1B8A27EB542000E594C6 /* JiraHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B8927EB542000E594C6 /* JiraHelper.swift */; };
+		A1DD1B8C27EB543400E594C6 /* JiraIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B8B27EB543400E594C6 /* JiraIssue.swift */; };
+		A1DD1B8E27EB543F00E594C6 /* JiraUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B8D27EB543F00E594C6 /* JiraUser.swift */; };
+		A1DD1B9027EB544F00E594C6 /* JiraPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B8F27EB544F00E594C6 /* JiraPriority.swift */; };
+		A1DD1B9227EB559500E594C6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B9127EB559500E594C6 /* Utilities.swift */; };
+		A1DD1B9427EB576100E594C6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B9327EB576100E594C6 /* HomeController.swift */; };
+		A1DD1B9627EB577300E594C6 /* JiraIssueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B9527EB577300E594C6 /* JiraIssueController.swift */; };
+		A1DD1B9827EB578500E594C6 /* JiraUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B9727EB578500E594C6 /* JiraUserController.swift */; };
+		A1DD1B9A27EB59DA00E594C6 /* JiraPriorityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DD1B9927EB59DA00E594C6 /* JiraPriorityController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2201C07AC903D5793F8488E7 /* Pods-jira-statistics-tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jira-statistics-tracker.release.xcconfig"; path = "Target Support Files/Pods-jira-statistics-tracker/Pods-jira-statistics-tracker.release.xcconfig"; sourceTree = "<group>"; };
+		A1DD1B6C27EB4EB100E594C6 /* jira-statistics-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jira-statistics-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1DD1B6F27EB4EB100E594C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1DD1B7127EB4EB100E594C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A1DD1B7627EB4EB100E594C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1DD1B7827EB4EB300E594C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1DD1B7B27EB4EB300E594C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1DD1B7D27EB4EB300E594C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1DD1B8327EB4F4700E594C6 /* jira-statistics-tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "jira-statistics-tracker.entitlements"; sourceTree = "<group>"; };
+		A1DD1B8727EB541400E594C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1DD1B8927EB542000E594C6 /* JiraHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraHelper.swift; sourceTree = "<group>"; };
+		A1DD1B8B27EB543400E594C6 /* JiraIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraIssue.swift; sourceTree = "<group>"; };
+		A1DD1B8D27EB543F00E594C6 /* JiraUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraUser.swift; sourceTree = "<group>"; };
+		A1DD1B8F27EB544F00E594C6 /* JiraPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraPriority.swift; sourceTree = "<group>"; };
+		A1DD1B9127EB559500E594C6 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		A1DD1B9327EB576100E594C6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		A1DD1B9527EB577300E594C6 /* JiraIssueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraIssueController.swift; sourceTree = "<group>"; };
+		A1DD1B9727EB578500E594C6 /* JiraUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraUserController.swift; sourceTree = "<group>"; };
+		A1DD1B9927EB59DA00E594C6 /* JiraPriorityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiraPriorityController.swift; sourceTree = "<group>"; };
+		B7007425173D4477BBB9E8B3 /* Pods_jira_statistics_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jira_statistics_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FF7E9F40B5DF1E84C97201 /* Pods-jira-statistics-tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jira-statistics-tracker.debug.xcconfig"; path = "Target Support Files/Pods-jira-statistics-tracker/Pods-jira-statistics-tracker.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1DD1B6927EB4EB100E594C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B213FEFDD2116125C26956B /* Pods_jira_statistics_tracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4265CD16D7D756C5F186A3DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4FF7E9F40B5DF1E84C97201 /* Pods-jira-statistics-tracker.debug.xcconfig */,
+				2201C07AC903D5793F8488E7 /* Pods-jira-statistics-tracker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1DD1B6327EB4EB100E594C6 = {
+			isa = PBXGroup;
+			children = (
+				A1DD1B6E27EB4EB100E594C6 /* jira-statistics-tracker */,
+				A1DD1B6D27EB4EB100E594C6 /* Products */,
+				4265CD16D7D756C5F186A3DB /* Pods */,
+				E6034FCA44FBE8FA116496CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1DD1B6D27EB4EB100E594C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1B6C27EB4EB100E594C6 /* jira-statistics-tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1DD1B6E27EB4EB100E594C6 /* jira-statistics-tracker */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1B8627EB502A00E594C6 /* View */,
+				A1DD1B8527EB501C00E594C6 /* Model */,
+				A1DD1B8427EB500200E594C6 /* JSONHelpers */,
+				A1DD1B8327EB4F4700E594C6 /* jira-statistics-tracker.entitlements */,
+				A1DD1B7527EB4EB100E594C6 /* Main.storyboard */,
+				A1DD1B7827EB4EB300E594C6 /* Assets.xcassets */,
+				A1DD1B7A27EB4EB300E594C6 /* LaunchScreen.storyboard */,
+				A1DD1B7D27EB4EB300E594C6 /* Info.plist */,
+			);
+			path = "jira-statistics-tracker";
+			sourceTree = "<group>";
+		};
+		A1DD1B8427EB500200E594C6 /* JSONHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1B8B27EB543400E594C6 /* JiraIssue.swift */,
+				A1DD1B8D27EB543F00E594C6 /* JiraUser.swift */,
+				A1DD1B8F27EB544F00E594C6 /* JiraPriority.swift */,
+			);
+			path = JSONHelpers;
+			sourceTree = "<group>";
+		};
+		A1DD1B8527EB501C00E594C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1B6F27EB4EB100E594C6 /* AppDelegate.swift */,
+				A1DD1B7127EB4EB100E594C6 /* SceneDelegate.swift */,
+				A1DD1B8927EB542000E594C6 /* JiraHelper.swift */,
+				A1DD1B9127EB559500E594C6 /* Utilities.swift */,
+				A1DD1B8727EB541400E594C6 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1DD1B8627EB502A00E594C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1DD1B9327EB576100E594C6 /* HomeController.swift */,
+				A1DD1B9527EB577300E594C6 /* JiraIssueController.swift */,
+				A1DD1B9727EB578500E594C6 /* JiraUserController.swift */,
+				A1DD1B9927EB59DA00E594C6 /* JiraPriorityController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E6034FCA44FBE8FA116496CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7007425173D4477BBB9E8B3 /* Pods_jira_statistics_tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1DD1B6B27EB4EB100E594C6 /* jira-statistics-tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1DD1B8027EB4EB300E594C6 /* Build configuration list for PBXNativeTarget "jira-statistics-tracker" */;
+			buildPhases = (
+				086DB67182955AAB26BEFE9F /* [CP] Check Pods Manifest.lock */,
+				A1DD1B6827EB4EB100E594C6 /* Sources */,
+				A1DD1B6927EB4EB100E594C6 /* Frameworks */,
+				A1DD1B6A27EB4EB100E594C6 /* Resources */,
+				7BCBB925A0640358524C792F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jira-statistics-tracker";
+			productName = "jira-statistics-tracker";
+			productReference = A1DD1B6C27EB4EB100E594C6 /* jira-statistics-tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1DD1B6427EB4EB100E594C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A1DD1B6B27EB4EB100E594C6 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = A1DD1B6727EB4EB100E594C6 /* Build configuration list for PBXProject "jira-statistics-tracker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1DD1B6327EB4EB100E594C6;
+			productRefGroup = A1DD1B6D27EB4EB100E594C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1DD1B6B27EB4EB100E594C6 /* jira-statistics-tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1DD1B6A27EB4EB100E594C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DD1B7C27EB4EB300E594C6 /* LaunchScreen.storyboard in Resources */,
+				A1DD1B7927EB4EB300E594C6 /* Assets.xcassets in Resources */,
+				A1DD1B7727EB4EB100E594C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		086DB67182955AAB26BEFE9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jira-statistics-tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BCBB925A0640358524C792F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jira-statistics-tracker/Pods-jira-statistics-tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jira-statistics-tracker/Pods-jira-statistics-tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jira-statistics-tracker/Pods-jira-statistics-tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1DD1B6827EB4EB100E594C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1DD1B7027EB4EB100E594C6 /* AppDelegate.swift in Sources */,
+				A1DD1B9027EB544F00E594C6 /* JiraPriority.swift in Sources */,
+				A1DD1B8C27EB543400E594C6 /* JiraIssue.swift in Sources */,
+				A1DD1B9A27EB59DA00E594C6 /* JiraPriorityController.swift in Sources */,
+				A1DD1B9827EB578500E594C6 /* JiraUserController.swift in Sources */,
+				A1DD1B8A27EB542000E594C6 /* JiraHelper.swift in Sources */,
+				A1DD1B7227EB4EB100E594C6 /* SceneDelegate.swift in Sources */,
+				A1DD1B9427EB576100E594C6 /* HomeController.swift in Sources */,
+				A1DD1B8E27EB543F00E594C6 /* JiraUser.swift in Sources */,
+				A1DD1B9627EB577300E594C6 /* JiraIssueController.swift in Sources */,
+				A1DD1B9227EB559500E594C6 /* Utilities.swift in Sources */,
+				A1DD1B8827EB541400E594C6 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1DD1B7527EB4EB100E594C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1DD1B7627EB4EB100E594C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1DD1B7A27EB4EB300E594C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1DD1B7B27EB4EB300E594C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1DD1B7E27EB4EB300E594C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1DD1B7F27EB4EB300E594C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1DD1B8127EB4EB300E594C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4FF7E9F40B5DF1E84C97201 /* Pods-jira-statistics-tracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "jira-statistics-tracker/jira-statistics-tracker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73YN9D8LV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "jira-statistics-tracker/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mipar.jira-statistics-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1DD1B8227EB4EB300E594C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2201C07AC903D5793F8488E7 /* Pods-jira-statistics-tracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "jira-statistics-tracker/jira-statistics-tracker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 73YN9D8LV2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "jira-statistics-tracker/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mipar.jira-statistics-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1DD1B6727EB4EB100E594C6 /* Build configuration list for PBXProject "jira-statistics-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DD1B7E27EB4EB300E594C6 /* Debug */,
+				A1DD1B7F27EB4EB300E594C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1DD1B8027EB4EB300E594C6 /* Build configuration list for PBXNativeTarget "jira-statistics-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1DD1B8127EB4EB300E594C6 /* Debug */,
+				A1DD1B8227EB4EB300E594C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1DD1B6427EB4EB100E594C6 /* Project object */;
+}
