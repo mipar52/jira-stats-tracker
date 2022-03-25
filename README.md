@@ -1,6 +1,6 @@
 A simple application demonstrating the usage of Jira REST API via Networking, a simple networking library, with Swift
 
-##Pre-requirements:
+## Pre-requirements:
 
 An Atlassian Account that has access to Jira:\
 https://id.atlassian.com/login
@@ -8,7 +8,7 @@ https://id.atlassian.com/login
 Atlassian API Token (PAT) for accessing the API:\
 https://id.atlassian.com/manage-profile/security/api-tokens
 
-##Usage:
+## Usage:
 
 Using Atlassian's PAT:\
 https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html#:~:text=Personal%20access%20tokens%20(PATs)%20are,in%20all%20scripts%20and%20integrations.
@@ -25,7 +25,7 @@ The sample application is designed to demonstrate the most common requests:
     
     5. Getting all priorities which a Jira issue can be marked with 
 
-##Jira REST API:
+## Jira REST API:
 
 Jira Rest API:\
 https://developer.atlassian.com/server/jira/platform/rest-apis/
@@ -33,14 +33,14 @@ https://developer.atlassian.com/server/jira/platform/rest-apis/
 API examples:\
 https://developer.atlassian.com/server/jira/platform/jira-rest-api-examples/
 
-##JSON
+## JSON
 
 The JSON models can be found in the `JSONHelpers` directory.
 
 With `JiraIssue` JSON, information like the issue name, assignee, priority, when the issue was created can be obtained, while on `JiraUser` and `JiraPriority` the name can be obtained.
 
 
-##Requests
+## Requests
 
 All of the requests are done via Networking.
 For the base URL, you can place the following URL: `https://your-company.atlassian.net/rest/api/2/`
